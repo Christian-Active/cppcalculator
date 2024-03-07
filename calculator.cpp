@@ -26,6 +26,7 @@ int calculateNum(double num1, char op, double num2) {
     }
     
     cout << "The answer is " << result;
+    
     return 0;
 }
 
