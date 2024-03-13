@@ -1,11 +1,8 @@
 #include <iostream>
-#include <math.h>
 using namespace std;
 
-int calculateNum(double num1, char op, double num2) {
-
+int calculate(double num1, char op, double num2) {
     double result;
-
     if (op == '+') {
         result = num1 + num2;
     }
@@ -18,14 +15,10 @@ int calculateNum(double num1, char op, double num2) {
     else if (op == '*') {
         result = num1 * num2;
     }
-    else if (op == '^') {
-        result = pow(num1, num2);
-    }
     else {
         cout << "Invalid operator used: Please provide a valid operator";
     }
-    
-    cout << "The answer is " << result;
+    cout << "Answer = " << result;
     return 0;
 }
 
@@ -37,7 +30,6 @@ int main () {
     cin >> num1;
     cin >> op;
     cin >> num2;
-
-    calculateNum(num1, op, num2);
+    calculate(num1, op, num2);
     return 0;
 }
